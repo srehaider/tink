@@ -1,0 +1,23 @@
+{
+  "name": "Tink",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Tink(title + link) a browser extension to copy title from website with embedded link",
+  "homepage_url": "https://github.com/srehaider/tink",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Copy title with link",
+    "default_icon": "disabled.png"
+  },
+  "permissions": [
+    "notifications",
+    "scripting"
+  ],
+  "host_permissions": [
+  	"https://app.asana.com/*",
+  	"https://docs.google.com/spreadsheets/*",
+  	"https://github.com/*"
+  ]
+}
